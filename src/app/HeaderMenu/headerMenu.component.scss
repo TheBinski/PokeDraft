@@ -1,0 +1,73 @@
+@import '../../styles.scss';
+
+button.Title {
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+    font-weight: 700;
+    transition: font-size 1.5s;
+    margin-left: 25px;
+    border: none;
+    background-color: $color-background-secondary;
+
+    &:hover {
+        font-size: 50px;
+        cursor: pointer;
+    }
+}
+
+.menuButtons {
+    display: flex;
+    margin-right: 25px;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    outline: 3px solid $color-border;
+
+    mat-button-toggle-group {
+        border: none;
+        border-radius: 0;
+    }
+
+    mat-button-toggle {
+        display: flex;
+        outline: 3px solid $color-border;
+        border: none;
+        border-radius: 0;
+        width: 150px;
+        border-left: none !important;
+        font-size: 22px;
+        font-weight: 500;
+
+        &:hover {
+            background-color: $color-primary-hover;
+            border-left: none !important;
+            border-radius: 0;
+        }
+
+        &.mat-button-toggle-checked {
+            background-color: $color-primary;
+            border-radius: 0;
+            
+            &:hover {
+                background-color: $color-primary-hover;
+                border-left: none !important;
+                border-radius: 0;
+            }
+        }
+    }
+
+    button.account-button {
+        height: 100%;
+        outline: 3px solid $color-border;
+        border: none;
+        border-radius: 0;
+        width: 150px;
+        font-size: 22px;
+        font-weight: 500;
+
+        &:hover {
+            background-color: $color-primary-hover;
+        }
+    }
+}
