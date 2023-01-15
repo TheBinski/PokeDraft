@@ -16,6 +16,8 @@ import { DraftsComponent } from './Pages/Drafts/drafts.component';
 import { AccountPageComponent } from './Pages/AccountPage/account-page.component';
 import { AboutComponent } from './Pages/About/about.component';
 import { SearchBarComponent } from './Components/search-bar/search-bar.component';
+import { SelectFilterComponent } from './Components/select-filter/select-filter.component';
+import { MultiSelectFilterComponent } from './Components/multi-select-filter/multi-select-filter.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { SearchBarComponent } from './Components/search-bar/search-bar.component
     AccountPageComponent,
     AboutComponent,
     SearchBarComponent,
+    SelectFilterComponent,
+    MultiSelectFilterComponent,
   ],
   imports: [
     BrowserAnimationsModule,

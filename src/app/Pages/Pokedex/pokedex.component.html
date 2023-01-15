@@ -1,5 +1,9 @@
 <div class="content-title">Pokedex</div>
-<app-search-bar placeholderText="Search Pokedex"></app-search-bar>
+<div class="filters">
+    <app-search-bar class="filter" placeholderText="Search Pokedex"></app-search-bar>    
+    <app-select-filter class="sorter" label="Types Filter" placeholderText="Types" [options]="typeOptions"></app-select-filter>
+    <app-select-filter label="Stat Filter" placeholderText="Stats" [options]="statSortOptions"></app-select-filter>
+</div>
 <div style="width: 500px; height: 500px; background-color: black; color: white;">
     <p>Pokedex</p>
 </div>

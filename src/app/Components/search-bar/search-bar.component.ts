@@ -11,6 +11,7 @@ export class SearchBarComponent {
   @Input() initialValue?: string;
   @Input() styleWidth?: string = '';
   @Input() styleHeight?: string = '';
+  
   searchValue: string = '';
 
   constructor() {

@@ -1,0 +1,10 @@
+<div class="searchBarContainer">
+    <mat-label class="search-label">{{label}}</mat-label>
+    <select class="select-filter" [(ngModel)]="selection" multiple>
+        <option *ngFor="let opt of options" [value]="opt.value">{{opt.text}}</option>
+    </select>
+        <mat-label *ngIf="!selection" class="placeholder-text">{{placeholderText}}</mat-label>
+        <button *ngIf="selection" class="clear-button" (click)="selection=[]">
+            <mat-icon>close</mat-icon>
+        </button>
+</div>

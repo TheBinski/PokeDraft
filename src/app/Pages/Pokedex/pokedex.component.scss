@@ -7,11 +7,12 @@
     margin: 10px 0 0 0;
 }
 
-.searchBar {
-    div.mdc-text-field {
-        background-color: $color-background;
-        border: 2px solid $color-border;
-        border-radius: 4px;
+.filters {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    .sorter, .filter {
+        margin-right: 10px;
     }
-
 }
