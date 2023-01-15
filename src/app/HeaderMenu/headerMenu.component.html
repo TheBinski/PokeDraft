@@ -1,6 +1,6 @@
 <button class="Title" (click)="goHome()">PokeDraft!</button>
 <div class="menuButtons"> 
-    <mat-button-toggle-group name="headerMenu">
+    <mat-button-toggle-group name="headerMenu" [(ngModel)]="selected">
         <mat-button-toggle value="Leagues" (click)="goToLeagues()">Leagues</mat-button-toggle>
         <mat-button-toggle value="Your-Drafts" (click)="goToDrafts()">Your Drafts</mat-button-toggle>
         <mat-button-toggle value="Pokedex" (click)="goToDex()">Pokedex</mat-button-toggle>

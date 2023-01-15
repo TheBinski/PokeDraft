@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'header-menu',
@@ -7,53 +8,66 @@ import { Component } from '@angular/core';
 })
 export class headerMenu {
 
+    selected: any = '';
+    constructor(private router: Router) {}
+
+    // Resets the header menu toggle to none selected
+    menuReset(): void {
+        this.selected = '';
+    }
+
     // ------Main Nav Tab Actions------
 
     // Navigates user back to Home page
     goHome(): void {
-     
-        console.log("GO HOME");
+        this.menuReset();
+        this.router.navigate(['/home']);
     }
 
     // Navigates user to Leagues page
     goToLeagues() {
-
-        console.log("GO LEAGUES");
+        this.router.navigate(['/leagues']);
     }
 
     // Navigates user to Drafts page
     goToDrafts() {
-
-        console.log("GO DRAFTS");
+        this.router.navigate(['/drafts']);
     }
 
     // Navigates user to Pokedex page
     goToDex(): void {
+        this.router.navigate(['/pokedex']);
+    }
 
-        console.log("GO DEX");
+    // Navigates user to Pokedex page
+    goToAbout(): void {
+        this.router.navigate(['/about']);
     }
 
     // ------User Account Button actions below------
 
     // Takes user to log in page and refreshes previous locations page
     signIn(): void {
-       
+        this.menuReset();
+        this.router.navigate(['/account']);
     }
 
     // Signs user out and after takes to home page
     signOut(): void {
-
-        this.goHome();
+        this.menuReset();
+        this.router.navigate(['/account']);
     }
 
     // Takes user to create account page
-    newUser(): void {
-
+    newUser(): void {       
+        this.menuReset();
+        this.router.navigate(['/account']);
     }
 
     // Takes user to settings page
     goToSettings(): void {
-
+        this.menuReset();
+        this.router.navigate(['/account']);
     }
 
 }

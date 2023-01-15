@@ -46,5 +46,11 @@ $color-good: #3cd106;
 $color-warning: #eda705;
 $color-error: #e60909;
 
-html, body { height: 100%; background-color: $color-background;}
+html, body {
+   height: 100%; 
+   background-color: $color-background;
+}
+
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html { overflow: hidden; }
