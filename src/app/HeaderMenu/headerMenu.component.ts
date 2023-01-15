@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class headerMenu {
 
     selected: any = '';
+    titleText: string = '';
     constructor(private router: Router) {}
 
     // Resets the header menu toggle to none selected

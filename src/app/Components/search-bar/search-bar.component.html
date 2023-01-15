@@ -1,0 +1,8 @@
+<div class="searchBarContainer">
+    <mat-label class="search-label">{{label}}</mat-label>
+    <input class="searchBar" type="text" [(ngModel)]="searchValue">
+        <mat-label *ngIf="!searchValue" class="placeholder-text">{{placeholderText}}</mat-label>
+        <button *ngIf="searchValue" class="clear-button" (click)="searchValue=''">
+            <mat-icon>close</mat-icon>
+        </button>
+</div>

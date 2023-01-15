@@ -40,7 +40,10 @@ $color-primary: #f38282;
 $color-primary-hover: #dda0a0;
 $color-background-secondary: #ffffff;
 $color-background: #a8a7a7;
-$color-border: #2e2d2d;
+$color-border: #424242;
+
+$color-input-background: #dbdada;
+$color-border-active: #222222;
 
 $color-good: #3cd106;
 $color-warning: #eda705;
@@ -51,6 +54,22 @@ html, body {
    background-color: $color-background;
 }
 
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+
+  .mat-mdc-menu-panel {
+    border: 3px solid $color-border;
+    background-color: $color-background-secondary;
+
+    button.mat-mdc-menu-item.accountChoice {
+      background-color: inherit;
+
+      &:hover {
+        background-color: $color-primary-hover;
+      }
+    }
+  }
+}
 
 html { overflow: hidden; }

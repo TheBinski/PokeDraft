@@ -15,6 +15,7 @@ import { LeaguesComponent } from './Pages/Leagues/leagues.component';
 import { DraftsComponent } from './Pages/Drafts/drafts.component';
 import { AccountPageComponent } from './Pages/AccountPage/account-page.component';
 import { AboutComponent } from './Pages/About/about.component';
+import { SearchBarComponent } from './Components/search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { AboutComponent } from './Pages/About/about.component';
     DraftsComponent,
     AccountPageComponent,
     AboutComponent,
+    SearchBarComponent,
   ],
   imports: [
     BrowserAnimationsModule,
