@@ -18,6 +18,10 @@ import { AboutComponent } from './Pages/About/about.component';
 import { SearchBarComponent } from './Components/search-bar/search-bar.component';
 import { SelectFilterComponent } from './Components/select-filter/select-filter.component';
 import { MultiSelectFilterComponent } from './Components/multi-select-filter/multi-select-filter.component';
+import { InputTextComponent } from './Components/input-text/input-text/input-text.component';
+import { AccountLoginComponent } from './Pages/AccountPage/Login/account-login.component';
+import { AccountSettingsComponent } from './Pages/AccountPage/Settings/account-settings.component';
+import { AccountSignupComponent } from './Pages/AccountPage/SignUp/account-signup.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +36,10 @@ import { MultiSelectFilterComponent } from './Components/multi-select-filter/mul
     SearchBarComponent,
     SelectFilterComponent,
     MultiSelectFilterComponent,
+    InputTextComponent,
+    AccountLoginComponent,
+    AccountSettingsComponent,
+    AccountSignupComponent,
   ],
   imports: [
     BrowserAnimationsModule,

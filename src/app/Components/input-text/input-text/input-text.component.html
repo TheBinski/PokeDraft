@@ -1,0 +1,8 @@
+<div class="inputTextBarContainer">
+    <mat-label class="input-label">{{label}}</mat-label>
+    <input class="inputTextBar" type={{inputType}}>
+        <mat-label *ngIf="!value" class="placeholder-text">{{placeholderText}}</mat-label>
+        <button *ngIf="value" class="clear-button" (click)="value=''">
+            <mat-icon>close</mat-icon>
+        </button>
+</div>
