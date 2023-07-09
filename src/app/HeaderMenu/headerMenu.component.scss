@@ -34,7 +34,7 @@ button.Title {
         outline: 3px solid $color-border;
         border: none;
         border-radius: 0;
-        width: 150px;
+        width: 165px;
         border-left: none !important;
         font-size: 22px;
         font-weight: 500;
@@ -55,6 +55,10 @@ button.Title {
                 border-radius: 0;
             }
         }
+
+        i {
+            padding-bottom: 2px;
+        }
     }
 
     button.account-button {
@@ -62,7 +66,7 @@ button.Title {
         outline: 3px solid $color-border;
         border: none;
         border-radius: 0;
-        width: 150px;
+        width: 165px;
         font-size: 22px;
         font-weight: 500;
         font-family: Roboto, "Helvetica Neue", sans-serif;

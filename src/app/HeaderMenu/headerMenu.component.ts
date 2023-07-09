@@ -50,7 +50,7 @@ export class headerMenu {
     // Takes user to log in page and refreshes previous locations page
     signIn(): void {
         this.menuReset();
-        this.router.navigate(['/account']);
+        this.router.navigate(['/account/login']);
     }
 
     // Signs user out and after takes to home page
@@ -62,13 +62,13 @@ export class headerMenu {
     // Takes user to create account page
     newUser(): void {       
         this.menuReset();
-        this.router.navigate(['/account']);
+        this.router.navigate(['/account/signup']);
     }
 
     // Takes user to settings page
     goToSettings(): void {
         this.menuReset();
-        this.router.navigate(['/account']);
+        this.router.navigate(['/account/settings']);
     }
 
 }

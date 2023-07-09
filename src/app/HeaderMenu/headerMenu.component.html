@@ -1,12 +1,27 @@
 <button class="Title" (click)="goHome()">PokeDraft!</button>
 <div class="menuButtons"> 
     <mat-button-toggle-group name="headerMenu" [(ngModel)]="selected">
-        <mat-button-toggle value="Leagues" (click)="goToLeagues()">Leagues</mat-button-toggle>
-        <mat-button-toggle value="Your-Drafts" (click)="goToDrafts()">Your Drafts</mat-button-toggle>
-        <mat-button-toggle value="Pokedex" (click)="goToDex()">Pokedex</mat-button-toggle>
-        <mat-button-toggle value="About" (click)="goToAbout()">About</mat-button-toggle>
+        <mat-button-toggle value="Leagues" (click)="goToLeagues()">
+            <i class="fa-regular fa-id-card"></i>
+            Leagues
+        </mat-button-toggle>
+        <mat-button-toggle value="Your-Drafts" (click)="goToDrafts()">
+            <i class="fa-solid fa-scroll"></i>
+            Your Drafts
+        </mat-button-toggle>
+        <mat-button-toggle value="Pokedex" (click)="goToDex()">
+            <i class="fa-solid fa-receipt"></i>
+            Pokedex
+        </mat-button-toggle>
+        <mat-button-toggle value="About" (click)="goToAbout()">
+            <i class="fa-solid fa-circle-info"></i>
+            About
+        </mat-button-toggle>
     </mat-button-toggle-group>
-    <button mat-button class="account-button" [matMenuTriggerFor]="menu">Sign In</button>
+    <button mat-button class="account-button" [matMenuTriggerFor]="menu">
+        <i class="fa-regular fa-circle-user"></i>
+        Sign In
+    </button>
     <mat-menu #menu="matMenu">
         <button mat-menu-item class="accountChoice" (click)="signIn()">Sign In</button>
         <button mat-menu-item class="accountChoice" (click)="newUser()">Create Account</button>

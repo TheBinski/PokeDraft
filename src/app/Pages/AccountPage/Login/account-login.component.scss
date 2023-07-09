@@ -1,0 +1,22 @@
+.content-title {
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+    margin: 10px 0 0 0;
+}
+
+.content {
+    width: 25%;
+    height: auto;
+    padding: 10px 50px;
+    margin: 75px 33% 0 33%;
+    border: red 2px solid;
+
+    .username {
+        margin: 10px 0;
+    }
+
+    .password {
+        margin: 10px 0;
+    }
+}
