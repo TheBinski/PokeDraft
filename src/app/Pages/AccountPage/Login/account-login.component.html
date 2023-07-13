@@ -1,11 +1,14 @@
-<div class="content-title">Account</div>
+<div class="content-title">Account - Login</div>
 <div class="content">
-    Login -- CREATE CUSTOM TEXT INPUTS FOR TEXT AND PASSWORD
     <div class="username">
-        <app-input-text label="User Name / Email"></app-input-text>
+        <app-input-text class="test" label="User Name / Email"/>
     </div>
     <div class="password">
-        Password
-        <input type="password" id="key">
+        <app-input-text label="Password" inputType="password"/>
+    </div>
+    <button class="loginButton">Login</button>
+    <div>
+        <button class="linkButton">Create Account</button>
+        <button class="linkButton">Forgot Password</button>
     </div>
 </div>

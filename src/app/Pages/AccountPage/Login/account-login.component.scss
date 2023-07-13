@@ -1,3 +1,5 @@
+@import '../../../../styles.scss';
+
 .content-title {
     font-size: 30px;
     font-weight: 500;
@@ -10,7 +12,18 @@
     height: auto;
     padding: 10px 50px;
     margin: 75px 33% 0 33%;
-    border: red 2px solid;
+    border: black 2px solid;
+    border-radius: 4px;
+
+     
+    ::ng-deep .inputTextBarContainer {
+        width: 250px;
+    }
+    
+
+    :host-context(.green-button) button{
+        color : green
+        }
 
     .username {
         margin: 10px 0;
@@ -18,5 +31,35 @@
 
     .password {
         margin: 10px 0;
+    }
+
+    .loginButton {
+        width: 100px;
+        margin: 10px 0;
+        border: $color-border 2px solid;
+        border-radius: 4px;
+        font-size: 20px;
+        color: black;
+        background-color: $color-input-background;
+        padding: 7.5px;
+
+        &:hover {
+            border-color: $color-border-active;
+            filter: brightness(90%);
+            cursor: pointer;
+        }
+    }
+
+    .linkButton {
+        border: none;
+        background-color: transparent;
+        color: blue;
+        font-size: 16px;
+        margin: 5px 0;
+
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
     }
 }
