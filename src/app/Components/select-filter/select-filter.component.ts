@@ -18,13 +18,13 @@ export class SelectFilterComponent {
   };
   selectionText: string = '';
 
-  constructor() {
+  constructor() {}
+
+  ngOnInit() {
     if (this.initialValue != null) {
-      this.selection = this.initialValue.value;
+      this.selection = this.initialValue;
       this.selectionText = this.initialValue.text;
-    }
-    if (this.options != null) {
-      console.log(this.options[0]);
+      console.log(this.selection);
     }
   }
 

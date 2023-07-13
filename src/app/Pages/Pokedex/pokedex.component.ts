@@ -11,6 +11,22 @@ export class PokedexComponent {
 
   // Filter sort options
 
+  defaultInitialSort: selectFilterOption = {
+    text: 'Regrion/Gen',
+    value: 'gen'
+  };
+
+  defaultSortOptions: Array<selectFilterOption> = [
+    {
+      text: 'Region/Gen',
+      value: 'gen'
+    },
+    {
+      text: 'Tier',
+      value: 'tier'
+    },
+  ]
+
   typeOptions: Array<selectFilterOption> = [
     {
       text: 'Normal',

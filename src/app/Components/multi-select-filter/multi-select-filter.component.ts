@@ -14,9 +14,13 @@ export class MultiSelectFilterComponent {
   
   selection: Array<selectFilterOption> = [];
 
-  constructor() {
+  constructor() {}
+
+  ngOnInit() {
     if (this.initialValues != null) {
       this.selection = this.initialValues;
     }
   }
+
+  // TODO - Finish this component
 }
