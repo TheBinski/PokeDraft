@@ -6,9 +6,9 @@
     <div class="password">
         <app-input-text label="Password" inputType="password"/>
     </div>
-    <button class="loginButton">Login</button>
+    <button class="loginButton" (click)="login()">Login</button>
     <div>
-        <button class="linkButton">Create Account</button>
-        <button class="linkButton">Forgot Password</button>
+        <button class="linkButton" (click)="navCreateAccount()">Create Account</button>
+        <button class="linkButton" (click)="navPassReset()">Forgot Password</button>
     </div>
 </div>

@@ -1,4 +1,13 @@
-<div class="content-title">Account</div>
-<div style="width: 500px; height: 500px; background-color: black; color: white;">
-    <p>New</p>
+<div class="content-title">Account - New Account</div>
+<div class="content">
+    <form>
+        <app-input-text formId="email" class="email" label="Email"/>
+        <app-input-text formId="username" class="username" label="User Name"/>
+        <p>Password must be minimum 8 characters long.</p>
+        <p class="p2">Password must include 1 number and 1 capital letter.</p>
+        <app-input-text formId="pass1" label="Password" inputType="password"/>
+        <app-input-text formId="pass2" label="Confirm Password" inputType="password"/>
+        <button type="submit" class="doneButton" (click)="doneAction()">Done</button>
+        <button type="cancel" class="cancelButton" (click)="cancelAction()">Cancel</button>
+    </form>
 </div>

@@ -1,6 +1,66 @@
+@import '../../../../styles.scss';
+
 .content-title {
     font-size: 30px;
     font-weight: 500;
     color: black;
     margin: 10px 0 0 0;
+}
+
+.content {
+    width: 25%;
+    height: auto;
+    padding: 10px 50px;
+    margin: 75px 33% 0 33%;
+    border: black 2px solid;
+    border-radius: 4px;
+
+     
+    ::ng-deep .inputTextBarContainer {
+        width: 250px;
+    }
+    
+
+    :host-context(.green-button) button{
+        color : green
+        }
+
+    .username {
+        margin: 10px 0;
+    }
+
+    .password {
+        margin: 10px 0;
+    }
+
+    .doneButton {
+        margin-right: 10px !important;
+    }
+
+    .doneButton, .cancelButton {
+        width: 80px;
+        margin: 10px 0;
+        border: $color-border 2px solid;
+        border-radius: 4px;
+        font-size: 16px;
+        color: black;
+        background-color: $color-input-background;
+        padding: 7.5px;
+
+        &:hover {
+            border-color: $color-border-active;
+            filter: brightness(90%);
+            cursor: pointer;
+        }
+    }
+
+    p {
+        margin: 5px 0;
+        font-size: 15px;
+        font-style: italic;
+
+        &.p2 {
+            margin-bottom: 10px;
+        }
+    }
 }

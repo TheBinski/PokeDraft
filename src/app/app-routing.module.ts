@@ -9,6 +9,7 @@ import { DraftsComponent } from './Pages/Drafts/drafts.component';
 import { HomeComponent } from './Pages/home/home.component';
 import { LeaguesComponent } from './Pages/Leagues/leagues.component';
 import { PokedexComponent } from './Pages/Pokedex/pokedex.component';
+import { AccountPasswordResetComponent } from './Pages/AccountPage/PasswordReset/account-passwordReset.component';
 
 const routes: Routes = [
   {
@@ -39,6 +40,10 @@ const routes: Routes = [
   {
     path: 'account/signup',
     component: AccountSignupComponent
+  },
+  {
+    path: 'account/reset',
+    component: AccountPasswordResetComponent
   },
   {
     path: 'drafts',

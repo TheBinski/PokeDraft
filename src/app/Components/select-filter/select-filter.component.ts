@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { map } from 'rxjs';
 
 @Component({
   selector: 'app-select-filter',
@@ -24,7 +23,6 @@ export class SelectFilterComponent {
     if (this.initialValue != null) {
       this.selection = this.initialValue;
       this.selectionText = this.initialValue.text;
-      console.log(this.selection);
     }
   }
 

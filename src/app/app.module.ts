@@ -22,6 +22,7 @@ import { InputTextComponent } from './Components/input-text/input-text/input-tex
 import { AccountLoginComponent } from './Pages/AccountPage/Login/account-login.component';
 import { AccountSettingsComponent } from './Pages/AccountPage/Settings/account-settings.component';
 import { AccountSignupComponent } from './Pages/AccountPage/SignUp/account-signup.component';
+import { AccountPasswordResetComponent } from './Pages/AccountPage/PasswordReset/account-passwordReset.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { AccountSignupComponent } from './Pages/AccountPage/SignUp/account-signu
     AccountLoginComponent,
     AccountSettingsComponent,
     AccountSignupComponent,
+    AccountPasswordResetComponent,
   ],
   imports: [
     BrowserAnimationsModule,
