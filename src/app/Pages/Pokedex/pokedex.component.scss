@@ -16,3 +16,23 @@
         margin-right: 10px;
     }
 }
+
+table {
+    .headerRow {
+        outline: 2px red solid;
+    }
+
+    .contentRow {
+        outline: 2px blue solid;
+
+        .abilityCol {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .statCol {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

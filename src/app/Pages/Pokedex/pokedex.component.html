@@ -5,6 +5,67 @@
     <app-select-filter class="sorter" label="Types Filter" placeholderText="Types" [options]="typeOptions"/>
     <app-select-filter label="Stat Filter" placeholderText="Stats" [options]="statSortOptions"/>
 </div>
-<div style="width: 500px; height: 500px; background-color: black; color: white;">
-    <p>Pokedex</p>
+<div>
+    <table>
+        <tr class="headerRow">
+            <th>Pokedex Number</th>
+            <th>Pokemon</th>
+            <th>Type1</th>
+            <th>Type2</th>
+            <th>Abilities</th>
+            <th class="statHeader">HP</th>
+            <th class="statHeader">Attack</th>
+            <th class="statHeader">Defense</th>
+            <th class="statHeader">Sp. Attack</th>
+            <th class="statHeader">Sp. Defense</th>
+            <th class="statHeader">Speed</th>
+        </tr>
+        <tr *ngFor="let poke of pokemon" class="contentRow">
+            <td>{{poke.dexNum}}</td>
+            <td>{{poke.name}}</td>
+            <td>{{poke.type1}}</td>
+            <td>{{poke.type2}}</td>
+            <td class="abilityCol">
+                <div>
+                    {{poke.ability1}}
+                </div>
+                <div>
+                    {{poke.ability2}}
+                </div>
+                <div>
+                    {{poke.ability3}}
+                </div>
+            </td>
+            <td>
+                <div class="statCol">
+                    {{poke.hp}}
+                </div>
+            </td>
+            <td>
+                <div class="statCol">
+                    {{poke.attack}}
+                </div>
+            </td>
+            <td>
+                <div class="statCol">
+                    {{poke.defense}}
+                </div>
+            </td>
+            <td>
+                <div class="statCol">
+                    {{poke.spAttack}}
+                </div>
+            </td>
+            <td>
+                <div class="statCol">
+                    {{poke.spDefense}}
+                </div>
+            </td>
+            <td>
+                <div class="statCol">
+                    {{poke.speed}}
+                </div>
+            </td>
+        </tr>
+    </table>
 </div>

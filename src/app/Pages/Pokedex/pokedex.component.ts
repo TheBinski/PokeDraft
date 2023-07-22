@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { selectFilterOption } from 'src/app/Components/select-filter/select-filter.component';
+import { Pokemon } from 'src/app/Datatypes/Pokemon';
 
 @Component({
   selector: 'app-pokedex',
@@ -150,6 +151,55 @@ export class PokedexComponent {
     {
       text: 'Speed (Low to High)',
       value: '-speed'
+    },
+  ];
+
+  // TEMP DATA FOR TESTING
+  pokemon: Array<Pokemon> = [
+    {
+      dexNum: 1,
+      name: "Bulbasaur",
+      type1: "Grass",
+      type2: "Poison",
+      ability1: "Overgrow",
+      ability2: null,
+      ability3: "Chlorophyll",
+      hp: 45,
+      attack: 49,
+      defense: 49,
+      spAttack: 65,
+      spDefense: 65,
+      speed: 45,
+    },
+    {
+      dexNum: 4,
+      name: "Charmander",
+      type1: "Fire",
+      type2: null,
+      ability1: "Blaze",
+      ability2: null,
+      ability3: "Solar Power",
+      hp: 39,
+      attack: 52,
+      defense: 43,
+      spAttack: 60,
+      spDefense: 50,
+      speed: 65,
+    },
+    {
+      dexNum: 7,
+      name: "Squirtle",
+      type1: "Water",
+      type2: null,
+      ability1: "Torrent",
+      ability2: null,
+      ability3: "Rain Dish",
+      hp: 44,
+      attack: 48,
+      defense: 65,
+      spAttack: 50,
+      spDefense: 64,
+      speed: 43,
     },
   ];
 
