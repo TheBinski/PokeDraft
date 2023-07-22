@@ -1,5 +1,6 @@
 export type Pokemon = {
     dexNum: number,
+    tier: string,
     name: string;
     type1: string;
     type2: string | null;

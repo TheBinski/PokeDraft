@@ -18,21 +18,57 @@
 }
 
 table {
+    border: 4px solid black;
+    border-radius: 4px;
+    border-spacing: 0;
+
     .headerRow {
-        outline: 2px red solid;
+        th {
+            border-bottom: 2px solid gray;
+            padding: 5px 10px;
+
+            &:nth-child(1) {
+                padding: 5px;
+            }
+
+            &.abilityHeader {
+                padding: 5px 25px;
+            }
+
+            &.statHeader {
+                padding: 5px;
+                width: 90px;
+
+                &:nth-child(1) {
+                    padding-left: 10px;
+                }
+            }
+        }
     }
 
     .contentRow {
-        outline: 2px blue solid;
+        td {
+            border-bottom: 2px solid lightgray;
+            text-align: center;
+        }
 
         .abilityCol {
-            display: flex;
             flex-direction: column;
         }
 
         .statCol {
             display: flex;
             justify-content: center;
+        }
+
+        &:last-child td {
+            border-bottom: none;
+        }
+
+        &:hover {
+            td {
+                background-color: lightpink;
+            }
         }
     }
 }

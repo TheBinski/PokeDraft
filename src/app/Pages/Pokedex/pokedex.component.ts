@@ -158,6 +158,7 @@ export class PokedexComponent {
   pokemon: Array<Pokemon> = [
     {
       dexNum: 1,
+      tier: "Uber",
       name: "Bulbasaur",
       type1: "Grass",
       type2: "Poison",
@@ -173,6 +174,7 @@ export class PokedexComponent {
     },
     {
       dexNum: 4,
+      tier: "Uber",
       name: "Charmander",
       type1: "Fire",
       type2: null,
@@ -188,6 +190,7 @@ export class PokedexComponent {
     },
     {
       dexNum: 7,
+      tier: "Uber",
       name: "Squirtle",
       type1: "Water",
       type2: null,
