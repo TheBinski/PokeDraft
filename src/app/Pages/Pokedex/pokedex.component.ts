@@ -105,51 +105,51 @@ export class PokedexComponent {
 
   statSortOptions: Array<selectFilterOption> = [
     {
-      text: 'Hp (High to Low)',
+      text: 'Hp +/-',
       value: '+hp'
     },
     {
-      text: 'Hp (Low to High)',
+      text: 'Hp -/+',
       value: '-hp'
     },
     {
-      text: 'Atk (High to Low)',
+      text: 'Atk +/-',
       value: '+attack'
     },
     {
-      text: 'Atk (Low to High)',
+      text: 'Atk -/+',
       value: '-attack'
     },
     {
-      text: 'Def (High to Low)',
+      text: 'Def +/-',
       value: '+defense'
     },
     {
-      text: 'Def (Low to High)',
+      text: 'Def -/+',
       value: '-defense'
     },
     {
-      text: 'Sp. Atk (High to Low)',
+      text: 'Sp. Atk +/-',
       value: '+spattack'
     },
     {
-      text: 'Sp. Atk (Low to High)',
+      text: 'Sp. Atk -/+',
       value: '-spattack'
     },
     {
-      text: 'Sp. Def (High to Low)',
+      text: 'Sp. Def +/-',
       value: '+spdefense'
     },
     {
-      text: 'Sp. Def (Low to High)',
+      text: 'Sp. Def -/+',
       value: '-spdefense'
     },
     {
-      text: 'Speed (High to Low)',
+      text: 'Speed +/-',
       value: '+speed'
     },
     {
-      text: 'Speed (Low to High)',
+      text: 'Speed -/+',
       value: '-speed'
     },
   ];
