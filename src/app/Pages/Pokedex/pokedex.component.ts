@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { selectFilterOption } from 'src/app/Components/select-filter/select-filter.component';
 import { Pokemon } from 'src/app/Datatypes/Pokemon';
+import sequelize from 'src/database_scripts/DatabaseConnector';
 
 @Component({
   selector: 'app-pokedex',
@@ -9,6 +10,16 @@ import { Pokemon } from 'src/app/Datatypes/Pokemon';
 })
 export class PokedexComponent {
   searchValue: string = '';
+
+  data = [];
+
+  constructor() {
+    
+  }
+
+  async ngOnInit() {
+    // Read data from database
+  }
 
   // Filter sort options
 
